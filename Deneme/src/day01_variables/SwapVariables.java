@@ -14,5 +14,6 @@ public class SwapVariables {
         System.out.println("Yeni sayi1: " + sayi1 + ", Yeni sayi2: " + sayi2);
         System.out.println("______________");
 
+
     }
 }
