@@ -7,4 +7,11 @@ public class Q13_Ternary {
      * olsun
      */
 
+    public static void main(String[] args) {
+
+        double fiyat = 9.5;
+
+        System.out.println(fiyat<10 ?  "ucuz" : (fiyat<20 ?  "normal" : "pahali"));
+    }
+
 }
