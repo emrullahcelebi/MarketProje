@@ -26,6 +26,7 @@ public class Q01_Modulus {
 
         int bas2 = sayi%10;
         sayi = sayi/10;
+
         int bas1 = sayi;
 
         if (sayi<=0 || sayi>=10) {

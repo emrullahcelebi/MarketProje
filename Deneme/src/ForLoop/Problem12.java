@@ -19,7 +19,7 @@ public class Problem12 {
             System.out.println("0!=1");
         }else {
             for (int i = 1; i <=sayi ; i++) {
-                faktoriyel = faktoriyel*i;
+                faktoriyel *= i;
             }
             System.out.println(sayi + "!=" + faktoriyel);
         }
