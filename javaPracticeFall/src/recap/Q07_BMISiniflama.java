@@ -6,7 +6,7 @@ public class Q07_BMISiniflama {
     /*
 		 *  Kullanicidan boyunu  CM  ve kilosunu kg alarak  BMI (VKE) hesaplayiniz
 		 *
-		BMI = kilo(kg) /(boy*boy)(cm)
+		BMI = kilo(kg) /(boy*boy)(m)
 		BMI <=20 oldukca zayifsiniz
 		20<BMI<=25 Normal sinirlardasiniz
 		25<BMI<=30 Sisman kategorisindesiniz
@@ -19,8 +19,8 @@ public class Q07_BMISiniflama {
         System.out.println("Lutfen kilonuzu giriniz");
         double kilo = scan.nextDouble();
 
-        System.out.println("Lutfen boyunuzu metre cinsinden giriniz");
-        double boy = scan.nextDouble();
+        System.out.println("Lutfen boyunuzu cm cinsinden giriniz");
+        double boy = scan.nextDouble()/100;
 
         double bMI = kilo/(boy*boy);
 
