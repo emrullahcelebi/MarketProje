@@ -21,6 +21,7 @@ public class Q07_StringManipulation {
 
         double toplam = (Double.parseDouble(str1.replaceAll("\\D", ""))
                 + Double.parseDouble(str2.replaceAll("\\D", ""))) / 100;
+
         System.out.println("toplam = " + toplam);
     }
 }
