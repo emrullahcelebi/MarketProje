@@ -14,9 +14,13 @@ public class Tr_For_While_9 {
        int sayi = scan.nextInt();
        int ters = 0;
 
-       while (!(sayi>0&&sayi<1)){
-
+       while (!(sayi<=0)){
+            ters += sayi%10;
+            sayi/=10;
+            ters*=10;
 
         }
+       ters/=10;
+       System.out.println("Girilen Numananin Tersi: " + ters);
     }
 }
