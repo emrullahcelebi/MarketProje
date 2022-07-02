@@ -1,5 +1,7 @@
 package Arrays;
 
+import java.util.Arrays;
+
 public class ArrayOlusturma {
     public static void main(String[] args) {
         //int arr1 = {1,2,3}; // Koseli parantez olmadan array olmaz
@@ -15,5 +17,22 @@ public class ArrayOlusturma {
         System.out.println(arr7[3]); // 0
         System.out.println(arr7); // [I@58372a00 == referans numarasi. cunku non-primitive
 
+        for (int i = 0; i <3 ; i++) {
+            System.out.print(arr2[i]+" "); // 1 2 3
+        }
+        System.out.println("");
+
+        System.out.println(Arrays.toString(arr2)); // [1, 2, 3]
+                                                    // Bu sekilde listeyi yazdirabiliriz
+
+        arr2[0] = 13;
+        arr2[2] = 27;
+
+        System.out.println(Arrays.toString(arr2)); // [13, 2, 27]
+
+        for (int i = 0; i < arr2.length; i++) { // .length eleman sayisini verir. Stringde parantezliyken bunda degil
+            arr2[i] += i;
+        }
+        System.out.println(Arrays.toString(arr2)); // [13, 3, 29]
     }
 }
