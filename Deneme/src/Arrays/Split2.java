@@ -12,7 +12,7 @@ public class Split2 {
         System.out.println("Cumlede harf " + cevap + " kez kullanilmis");
     }
 
-    private static int kullanimSayisi(String cumle, char harf) {
+    public static int kullanimSayisi(String cumle, char harf) {
 
         String arr [] = cumle.split("");
         String harfStr = ""+harf;

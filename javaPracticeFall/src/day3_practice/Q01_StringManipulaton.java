@@ -9,4 +9,8 @@ public class Q01_StringManipulaton {
      *         Output : Cesaret insana sinirlarini ogretir.
      *
      */
+    public static void main(String[] args) {
+
+
+    }
 }
