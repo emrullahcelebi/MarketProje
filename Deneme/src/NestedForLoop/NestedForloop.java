@@ -19,7 +19,7 @@ public class NestedForloop {
             System.out.println("");
         }
 
-        }
-
     }
+
+}
 
