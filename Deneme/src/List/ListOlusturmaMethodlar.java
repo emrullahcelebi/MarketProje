@@ -36,9 +36,6 @@ public class ListOlusturmaMethodlar {
         Integer sayi = 3;
         sayilarList.remove(sayi); // Wrapper yazarsak sayiyi siler primitivde indexi siler
 
-        list.set(1,"Engin"); // Yusuf gitti Engin geldi, return olarak silineni getirdi
-        System.out.println(list.get(2)); // o indexte ne oldugunu getirir
-
     }
 
 }

@@ -31,7 +31,7 @@ public class Problem4 {
         for (int i = 0; i <=str2.length-1 ; i++) {
             son[i] =(int) Double.parseDouble(str2[i]);
         }
-        System.out.println(kaldirilacak+ " olmadan araay: " +Arrays.toString(son));
+        System.out.println(kaldirilacak+ " olmadan array: " +Arrays.toString(son));
 
 
 
