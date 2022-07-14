@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class ArrayBuyuktenKucuge {
     public static void main(String[] args) {
 
-        // Verilen bir array`i buyukten kucuge siralayan bir method olusturalim
+        // Verilen bir array`i tersten yazdiran bir method olusturalim
 
         int arr[] = {3,5,6,1,9,45,25,4,9,0};
 
