@@ -19,7 +19,6 @@ public class ListedenTekrarliElementSilme {
 
         List<Integer> tekrarsiz = new ArrayList<Integer>();
         tekrarsiz = tekrarsizListeOlustur(sayilar);
-
         System.out.println(tekrarsiz);
     }
 
