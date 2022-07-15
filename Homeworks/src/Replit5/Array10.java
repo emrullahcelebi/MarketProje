@@ -22,9 +22,15 @@ public class Array10 {
         }
         System.out.println(reversed); // testte istenen
 
+        String str[]= sentence.split(" ");
         reversed = "";
 
+        for (int i = str.length-1; i >=0 ; i--) {
+            reversed+= str[i] + " ";
+        }
 
+        reversed = reversed.trim();
+        System.out.println(reversed);
 
-    }
+        }
 }
