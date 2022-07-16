@@ -27,7 +27,7 @@ public class Q08_Arrays {
           System.out.print("3`e bolunebilen elemanlar: ");
 
           for (int i = 0; i < arr.length; i++) {
-               if (arr[i]%3==0) System.out.print(arr[i] + ", ");
+               if (arr[i]%3==0) System.out.print(arr[i] + " ");
           }
      }
 
