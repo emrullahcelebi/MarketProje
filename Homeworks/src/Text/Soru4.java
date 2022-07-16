@@ -31,7 +31,7 @@ public class Soru4 {
 
     }
 
-    private static int onlukCevirme(int toplam) {
+    public static int onlukCevirme(int toplam) {
         String str = "";
         while (toplam>0) {
             str= (toplam % 2)+ str;
@@ -41,7 +41,7 @@ public class Soru4 {
         return toplamBn;
     }
 
-    private static int binaryHesaplama(int sayi) {
+    public static int binaryHesaplama(int sayi) {
         int onluk = 0;
         int basamak = 1;
 
