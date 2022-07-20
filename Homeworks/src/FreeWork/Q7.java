@@ -1,34 +1,30 @@
 package FreeWork;
 
-import java.util.Arrays;
+import java.util.Scanner;
 
 public class Q7 {
     /*
-    Methoda iki sayı girelim ve  bize bir array dönsün.
-     Array elemanları 1.sayının 2. sayı kadar kendisi ile
-     toplamından oluşsun.
-
-    Test Data:
-    arrayOfMultiples(7, 5)
-
-    sonuç: [7,14,21,28,35]
-
+    Verilen bir Stringte tekrarlanmayan ilk karakterin indexini bulan bir Java programi yazin.
+    Ornek Input: google
+    Beklenen cikti:
+    'google'da tekrarlanmayan ilk karakter: l, indexi: 4
      */
     public static void main(String[] args) {
+        Scanner scan  = new Scanner(System.in);
 
-        int arr [] = arrayOfMultiples(7, 5);
+        System.out.println("String giriniz");
+        String str = scan.nextLine();
 
-        System.out.println(Arrays.toString(arr));
-    }
-
-    private static int[] arrayOfMultiples(int i1, int i2) {
-        int[] arr = new int[i2];
-
-        int toplam = i1;
-        for (int i = 0; i < i2; i++) {
-            arr[i] = toplam;
-            toplam+=i1;
+        boolean varMi = false;
+        for (int i = 0; i < str.length(); i++) {
+            if (str.length()-str.replace(str.substring(i,i + 1),"").length()==1) {
+                varMi = true;
+                System.out.println(str + "`da tekrarlanmayan ilk karakter: " + str.substring(i,i + 1) + ", indexi: " + i);
+                break;
+            }
         }
-        return arr;
+        if (!varMi) System.out.println("Tekrarlanmayan karakter yok");
+
+
     }
 }
