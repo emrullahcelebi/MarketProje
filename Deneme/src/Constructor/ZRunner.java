@@ -8,5 +8,7 @@ public class ZRunner {
 
         Z obj2 = new Z("Emre", "GuL", 55);
         System.out.println(obj2);
+
+
     }
 }

@@ -8,10 +8,10 @@ public class Toyota {
     String yakit;
     int yil;
 
-    public Toyota(String mdl, String ykt, int i) {
-        model=mdl;
-        yakit=ykt;
-        yil=i;
+    public Toyota(String model, String yakit, int yil) {
+        this.model=model;
+        this.yakit=yakit;
+        this.yil=yil;
     }
     public Toyota(){
 

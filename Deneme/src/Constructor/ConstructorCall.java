@@ -12,8 +12,9 @@ public class ConstructorCall {
     }
 
     public static void main(String[] args) {
-        ConstructorCall mc1 = new ConstructorCall(4);
+        ConstructorCall mc1 = new ConstructorCall(4); //-x5
+                                                        //-x5
 
-        ConstructorCall mc2 = new ConstructorCall();
+        ConstructorCall mc2 = new ConstructorCall(); //-x5
     }
 }
