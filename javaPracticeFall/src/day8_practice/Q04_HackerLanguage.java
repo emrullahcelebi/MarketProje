@@ -14,4 +14,20 @@ public class Q04_HackerLanguage {
 //    j4v4 1l3 h3r53y guz3l
 //    İpucu harfleri değiştirin ve ekrana yazdırın.
 
+    public static void main(String[] args) {
+        String str = "java ile her sey guzel";
+
+
+        for (int i = 0; i < str.length(); i++) {
+            switch (str.charAt(i)) {
+                case 's': System.out.print("5"); break;
+                case 'a': System.out.print("4"); break;
+                case 'e': System.out.print("3"); break;
+                case 'i': System.out.print("1"); break;
+                case 'o': System.out.print("0"); break;
+                default:  System.out.print(str.charAt(i));
+            }
+        }
+    }
+
 }

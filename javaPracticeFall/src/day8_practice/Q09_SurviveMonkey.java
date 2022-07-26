@@ -11,4 +11,20 @@ public class Q09_SurviveMonkey {
 		int numberOfBananas =165, survivalDays = 1;
 		boolean monkeyAlive = true;
 		*/
+    public static void main(String[] args) {
+
+        int numberOfBananas =165, survivalDays = 1;
+        boolean monkeyAlive = true;
+
+        while (monkeyAlive) {
+            if (numberOfBananas>=4){
+                numberOfBananas-=4;
+                System.out.println("Gun = " + survivalDays + " maymun hayatta, kalan muz: " + numberOfBananas);
+            } else {
+                monkeyAlive = false;
+                System.out.println("Gun = " + survivalDays + " maymun oldu");
+            }
+            survivalDays++;
+        }
+    }
 }
