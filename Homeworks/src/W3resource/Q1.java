@@ -1,4 +1,4 @@
-package FreeWork;
+package W3resource;
 
 public class Q1 {
     /*

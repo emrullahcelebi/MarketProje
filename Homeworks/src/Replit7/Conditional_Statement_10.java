@@ -21,7 +21,7 @@ public class Conditional_Statement_10 {
         return kombinasyon;
     }
     public static void main(String[] args) {
-        int satir = 8;
+        int satir = 5;
         for (int i = 0; i < satir; i++) {
             for (int j = 0; j < satir-i-1; j++) {
                 System.out.print(" ");
