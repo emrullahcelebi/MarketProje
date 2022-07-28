@@ -40,6 +40,9 @@ public class Corolla extends Toyota{
         System.out.println(arb2.sirketMerkezi); // toyota
         //System.out.println(arb2.model); // CTE
         arb2.motor(); // corolla
+        arb2.garanti(); // Toyota
+        arb2.yakitTukemi(); // Corolla
+        //arb2.vitesSayisi(); // Data turu toyota oldugu icin bulamaz CTE
 
         Araba arb3 = new Corolla();
         System.out.println(arb3.hareket); // araba
@@ -49,6 +52,9 @@ public class Corolla extends Toyota{
         //System.out.println(arb3.sirketMerkezi); // CTE
         //System.out.println(arb3.model); // CTE
         arb3.motor(); // corolla
+        arb3.yakitTukemi(); // Corolla
+        //arb3.garanti(); // CTE
+        //arb3.vitesSayisi(); // CTE
 
     }
 }
