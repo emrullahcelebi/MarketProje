@@ -11,7 +11,7 @@ public class C05_IkiTarihArasiBulma {
         LocalDate dogumGunu = LocalDate.of(1995,10,18);
 
         System.out.println(Period.between(dogumGunu,bugun)); // P26Y8M29D
-        System.out.println(Period.between(dogumGunu,bugun).getYears());
+        System.out.println(Period.between(dogumGunu,bugun).getDays());
         
     }
 }
