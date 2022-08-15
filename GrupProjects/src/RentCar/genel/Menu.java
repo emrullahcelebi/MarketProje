@@ -19,7 +19,8 @@ public class Menu {
                          "\n6- Toyota    Auris     benzin&LPG  otomatik        130tl"+
                          "\n7- Volvo     V40       benzin      yari otomatik   150tl"+
                          "\n8- Volvo     XC90      dizel       otomatik        180tl"+
-                         "\n9- Volvo     S60       hybrid      otomatik        200tl");
+                         "\n9- Volvo     S60       hybrid      otomatik        200tl"+
+                         "\n10- ek arac talebiniz                              300tl");
         System.out.print("Araba tercihinizin numarasini giriniz : ");
         int arabaTercih = scan.nextInt();
 
@@ -58,6 +59,10 @@ public class Menu {
             }
             case 9 -> {
                 System.out.print("Volvo S60 sectiniz. Devam etmek istediginize emin misiniz? (E/H):");
+                secim(arabaTercih);
+            }
+            case 10 -> {
+                System.out.print("Liste disi arac talep ettiniz. Devam etmek istediginize emin misiniz? (E/H):");
                 secim(arabaTercih);
             }
             default -> {

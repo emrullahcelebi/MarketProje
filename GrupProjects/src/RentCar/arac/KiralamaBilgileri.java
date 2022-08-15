@@ -1,5 +1,9 @@
 package RentCar.arac;
 
+import RentCar.genel.Menu;
+import RentCar.kullanici.MusteriBilgileri;
+import RentCar.kullanici.OdemeIslemleri;
+
 import java.time.LocalDate;
 import java.time.Period;
 import java.time.format.DateTimeFormatter;
@@ -39,18 +43,39 @@ public class KiralamaBilgileri {
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/yyyy");
         Period period =Period.between(AracOlusturma.musteri.alisTarihi,AracOlusturma.musteri.teslimTarihi);
 
-        int hesap = period.getMonths()*30+period.getDays();
+        double hesap = period.getMonths()*30+period.getDays();
         if (AracOlusturma.musteri.teslimSaati> AracOlusturma.musteri.alisSaati){
             hesap++;
         }
         hesap*=AracOlusturma.musteri.fiyatlar.get(0);
-        System.out.println(dtf.format(AracOlusturma.musteri.alisTarihi)+" "+AracOlusturma.musteri.alisSaati+":00");
-        System.out.println(dtf.format(AracOlusturma.musteri.teslimTarihi)+" "+AracOlusturma.musteri.teslimSaati+":00");
+        System.out.println("Alis zamani: " + dtf.format(AracOlusturma.musteri.alisTarihi)+" "+AracOlusturma.musteri.alisSaati+":00");
+        System.out.println("Teslim zamani: " + dtf.format(AracOlusturma.musteri.teslimTarihi)+" "+AracOlusturma.musteri.teslimSaati+":00");
         System.out.println("Toplam kiralama bedeli: " + hesap + " TL");
+        AracOlusturma.musteri.fiyatlar.add(hesap);
+        devam();
+
     }
 
+    static void devam(){
+        System.out.println("Lutfen menuden secim yapiniz");
+        System.out.println("1-Devam" + "\n2-Bilgileri yeniden gir" + "\n3-Ana menu");
+        int secim = scan.nextInt();
 
+        switch (secim){
+            case 1:
+                MusteriBilgileri.musteriBilgi();
+                OdemeIslemleri.odemeBilgi();
+                break;
+            case 2:
+                tarihSaat();
+                break;
+            case 3:
+                Menu.girisPaneli();
+                break;
+            default:
+                System.out.println("Gecerli giris yapiniz");
+                devam();
+        }
 
-
-
+    }
 }
