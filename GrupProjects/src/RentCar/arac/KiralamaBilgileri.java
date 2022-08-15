@@ -1,30 +1,13 @@
 package RentCar.arac;
 
-import RentCar.kullanici.MusteriBilgileri;
-
 import java.time.LocalDate;
 import java.time.Period;
 import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
 public class KiralamaBilgileri {
-        /*
-    String alinacakSehir;
-    String alinacakGun; (MM,dd--> ay gun formatında olmalı)
-    double alisSaati;
 
-    String teslimGunu;  (MM,dd--> ay gun formatında olmalı) bize söylicek
-    double teslimSaati;
-
-     */
     static Scanner scan = new Scanner(System.in);
-    String alinacakSehir;
-    String alinacakGun;
-    double alisSaati;
-
-    String teslimGunu;
-    double teslimSaati;
-
 
     public static void tarihSaat(){
 

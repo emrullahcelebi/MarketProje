@@ -12,9 +12,6 @@ import RentCar.arac.volvo.C02_XC90;
 import RentCar.kullanici.MusteriBilgileri;
 
 public class AracOlusturma {
-
-
-    // secilen arabaya gore obje olsturacagiz
     static MusteriBilgileri musteri = new MusteriBilgileri();
     public static void aracOlustur(int arabaTercih){
 

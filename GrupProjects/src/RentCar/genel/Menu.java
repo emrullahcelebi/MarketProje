@@ -5,20 +5,7 @@ import RentCar.arac.AracOlusturma;
 import java.util.Scanner;
 
 public class Menu {
-    /*
-    ===HOSGELDİNİZ===
-    arabaları listeleyelim
-    Marka       Model       Vites       Yakıt       Günlük Ücreti
-    1-opel      astra       manuel      dizel       100tl
-    2-opel      corsa       otomatik    benzin       80tl
-    2-toyota
-    3-volvo
-    0-Çıkış
-
-    hangisini istiyorsa seçsin
-     */
     static Scanner scan = new Scanner(System.in);
-
 
     public static void girisPaneli(){
         System.out.println("***CodeOfDuty Rent-A-Car***");
