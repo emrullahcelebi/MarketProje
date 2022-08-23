@@ -10,16 +10,24 @@ public class C02 {
         Kullaniciya index sorup o indexteki urunu yazdiran bir program hazirlayalim
         Kullanici urun sayisindan buyuk bir index girerse exc vermesinin onune gecelim
          */
-        Scanner scan  = new Scanner(System.in);
+        Scanner scan;
 
         String[] urunler = {"Nutella", "Cokokrem", "Sut", "Cay", "Findik"};
 
         System.out.println("Istediginiz urunun sira nosunu girin");
+
         int istenenSira = 0;
-        try {
-            istenenSira = scan.nextInt();
-        } catch (InputMismatchException e) {
-            System.out.println("Urun indexi icin bir tamsayi girilmeli");
+
+
+        boolean kontrol = true;
+        while (kontrol) {
+             scan= new Scanner(System.in);
+            try {
+                istenenSira = scan.nextInt();
+                kontrol = false;
+            } catch (InputMismatchException e) {
+                System.out.println("Urun indexi icin bir tamsayi girilmeli");
+            }
         }
         /*
         catch parantezinin icindeki e veriable oluyor.
@@ -27,7 +35,7 @@ public class C02 {
         */
 
         try {
-            System.out.println("Urununuz: " + urunler[istenenSira-1]);
+            System.out.println("Urununuz: " + urunler[istenenSira - 1]);
         } catch (ArrayIndexOutOfBoundsException e) {
             System.out.println("Girdiginiz sira listede yok" + "\nGirilen sira en fazla " + urunler.length + " olabilir");
         }
