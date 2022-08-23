@@ -26,5 +26,7 @@ public class C05 {
 
         Thread.sleep(5000); // 5 saniye bekletecek
 
+        throw new RuntimeException("Buraya hata koyduk"); // Exception olarak parantez icini yazar
+
     }
 }
