@@ -3,6 +3,7 @@ package Abstract;
 public abstract class C01 {
 
     void toplama(){
+        // abstract olmayan methodlara concrete method denir
         System.out.println("Bu method toplama yapar");
     }
 
