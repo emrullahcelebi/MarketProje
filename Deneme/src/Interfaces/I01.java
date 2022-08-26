@@ -31,6 +31,7 @@ public interface I01 {
     int SAYI = 20;
 
     static void yakit() {
+        System.out.println("Yakit methodu");
     /*
     Interface icindeki tum methodlar public ve abstracttir
 
@@ -44,7 +45,13 @@ public interface I01 {
     Bu methodlarin bodysi olsa da interface`in yapisi geregi bu methodlara concrete denilmez
     Body`si olan bu methodlar istisna olarak kabul edilebilir
 
-    bu methodlara static eklenmelidir
+    bu methodlara static eklenmelidir, veya default asagida gorundugu gibi
+    static olursa childlar InterFaceAdi.MethodAdi ile ulasir
+    default olursa obje uzerinden ulasir
      */
     };
+
+    public default void teker(){
+        System.out.println("Teker methodu");
+    }
 }

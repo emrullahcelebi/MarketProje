@@ -13,5 +13,9 @@ public class C_Child implements I01, I02{
         System.out.println(I02.SAYI); // iki implement interfacede de ayni isimde veriable varsa
         System.out.println(I01.SAYI); // interface ismi ile beraber yazilir
         System.out.println(ISIM);
+
+        I01.yakit(); // istisna static bodyli method
+        C_Child obj = new C_Child();
+        obj.teker(); // istisna default obje uzerinden ulasildi
     }
 }
