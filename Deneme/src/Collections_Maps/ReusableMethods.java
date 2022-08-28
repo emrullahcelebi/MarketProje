@@ -35,4 +35,26 @@ public class ReusableMethods {
         }
         return sinifIsimSoyisimList;
     }
+
+    public static void bransOgrenciSayisiYazdir(Map<Integer, String> ogrenciMap) {
+        Map<String, Integer> bransOgrSayiMap = new TreeMap<>();
+
+        String [] valueArr;
+        String brans;
+
+        for (String each: ogrenciMap.values()
+             ) {
+            valueArr = each.split(", ");
+            brans = valueArr[2];
+
+            // brans`in bransOgrSayiMap`inde key olarak var olup olmadigini kontrol etmeliyiz
+            if (!bransOgrSayiMap.containsKey(brans)) {
+                bransOgrSayiMap.put(brans, 1);
+            } else {
+                bransOgrSayiMap.put(brans, bransOgrSayiMap.get(brans)+1);
+            }
+        }
+        System.out.println(bransOgrSayiMap);
+
+    }
 }

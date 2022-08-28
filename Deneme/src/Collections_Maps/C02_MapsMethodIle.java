@@ -24,5 +24,8 @@ public class C02_MapsMethodIle {
         List<String> ogrenciList = ReusableMethods.isimSoyisimListesiOlustur(ogrenciMap);
         System.out.println(ogrenciList);
         // [Ali Can, Enes Cem, Taha Emre, Derya Deniz]
+
+        // Kac farkli brans varsa bransIsmi = branstakiOgrenciSayisi seklinde yazdirin
+        ReusableMethods.bransOgrenciSayisiYazdir(ogrenciMap);
     }
 }
