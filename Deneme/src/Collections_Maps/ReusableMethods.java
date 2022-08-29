@@ -57,4 +57,12 @@ public class ReusableMethods {
         System.out.println(bransOgrSayiMap);
 
     }
+
+    public static void entryYazdir(Map<Integer, String> ogrenciMap) {
+
+        for (Map.Entry<Integer, String> entry : ogrenciMap.entrySet()
+             ) {
+            System.out.println(entry);
+        }
+    }
 }
