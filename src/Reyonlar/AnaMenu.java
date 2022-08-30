@@ -1,7 +1,5 @@
 package Reyonlar;
 
-import java.util.Scanner;
-
 public class AnaMenu {
 
 
@@ -15,23 +13,17 @@ public class AnaMenu {
                             "                     2- Kasap\n" +
                             "                     3- Sarkuteri");
 
-        double secim = Secim.secim();
-        if (secim!=(int)secim){
-            System.out.println("Lutfen gecerli secimi yapiniz!!");
-            secim=Secim.secim();
-        }
+        int secim = SecimMethodlari.ucluSecim();
 
-        switch ((int) secim){
+
+        switch (secim){
             case 1: Manav.obj.listeYazdir();break;
             case 2:Kasap.obj.listeYazdir();break;
             case 3:Sarkuteri.obj.listeYazdir();break;
-            default:
-                System.out.println("Lutfen gecerli bir secim giriniz");
-                Secim.secim();
         }
 
 
-        UrunSecimi.urunSecimi();
+        UrunSecimi.urunSecimi(secim);
 
 
 
